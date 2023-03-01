@@ -39,10 +39,14 @@ public class User implements UserDetails {
         return List.of(new SimpleGrantedAuthority(role.name()));
     }
 
-    @Override
+    //    @Override
     public String getUsername() {
         return email;
     }
+
+//    public String getEmail() {
+//        return email;
+//    }
 
     @Override
     public String getPassword() {
